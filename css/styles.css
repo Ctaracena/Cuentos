@@ -17,19 +17,17 @@ body {
 }
 
 .welcome {
+  width: 80vw;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: #c3aed6;
 }
 
 h1 {
+  margin: 30px 0;
   width: 70%;
   font-size: 40px;
   text-align: center;
@@ -46,7 +44,7 @@ h1 {
 }
 
 form {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,27 +56,29 @@ form {
 }
 
 label {
+  font-size: 18px;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 5px 0;
   color: #333333;
 }
 
 input {
-  width: 50%;
+  width: 70%;
   height: 30px;
   border: none;
   border-radius: 25px;
-  padding: 3px 0;
+  padding: 5px 0;
   outline: none;
   text-align: center;
   font-weight: bold;
   font-size: 22px;
-  color: #8675a9
+  color: #8675a9;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .start {
   width: 30%;
-  height: 30px;
+  padding: 10px;
   border: none;
   border-radius: 25px;
   outline: none;
@@ -87,23 +87,67 @@ input {
   color: white;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
+.start:hover {
+  transform: scale(1.1);
+}
+
+header {
+  width: 100%;
+  margin: 0;
+}
+
+.freepik {
+  color: #ffd5cd;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+header img {
+  width: 100%;
+}
 main {
-  padding: 4%;
   border: 15px solid #efbbcf;
 }
 
+.cuento {
+  padding: 15px 4%;
+}
+
 h2 {
-  font-size: 36px;
+  font-size: 42px;
   text-align: center;
   margin: 10px 0;
   color: #8675a9;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1)
 }
 
 main p {
   font-size: 18px;
   line-height: 1.5;
   margin: 20px 0;
-  color: #333333;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.image-container,
+.image-container2 {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  width: 30%;
+  margin-right: 4%;
+  border-radius: 10px;
+}
+
+.image-container2 img {
+  width: 30%;
+  margin-left: 4%;
+  border-radius: 10px;
 }
