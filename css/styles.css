@@ -17,13 +17,18 @@ body {
 }
 
 .welcome {
-  width: 80vw;
+  width: 100vw;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #c3aed6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 h1 {
@@ -39,7 +44,7 @@ h1 {
   width: 92%;
   text-align: center;
   font-size: 20px;
-  color: #333333;
+  color: #4c4c4c;
   margin: 10px 0;
 }
 
@@ -75,10 +80,15 @@ input {
   color: #8675a9;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--purple);
+}
 
 .start {
   width: 30%;
-  padding: 10px;
+  height: 40px;
   border: none;
   border-radius: 25px;
   outline: none;
@@ -150,4 +160,32 @@ main p {
   width: 30%;
   margin-left: 4%;
   border-radius: 10px;
+}
+
+.end p {
+  text-align: center;
+  font-size: 28px;
+}
+
+.back {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.back-btn {
+  width: 30%;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  margin: 30px;
+  background-color: #8675a9;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
